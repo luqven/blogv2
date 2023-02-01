@@ -20,8 +20,8 @@ body {
 		- https://css-tricks.com/strut-your-stuff-with-a-custom-scrollbar/
 		*/
 	/* --scrollbar-primary-color: #3730a3; */
-	--scrollbar-primary-color: #facc15;
-	--text-color: #ef4444;
+	--scrollbar-primary-color: #00bffe;
+	--text-color: #f8510f;
 	overflow: scroll; /* https://maxschmitt.me/posts/react-prevent-layout-shift-body-scrollable/ */
 }
 /* .dark body {
@@ -51,14 +51,14 @@ pre {
 
 @layer components {
 	body {
-		--brand-accent: #facc15;
+		--brand-accent: #00bffe;
 		/* https://ishadeed.com/article/defensive-css */
 		overflow-wrap: break-word;
 		overflow-y: auto;
 		scrollbar-gutter: stable;
 	}
 	/* .dark > body {
-    --brand-accent: #a16207;
+    --brand-accent: #00bffe;
   } */
 	:root {
 		accent-color: var(--brand-accent);
@@ -102,7 +102,7 @@ pre {
 }
 /* bg-yellow-200 dark:hover:bg-yellow-800 */
 a {
-	@apply text-yellow-700 hover:text-yellow-700 hover:underline dark:text-yellow-400 dark:hover:text-yellow-200;
+	@apply text-sky-700 hover:text-sky-700 hover:underline dark:text-sky-400 dark:hover:text-sky-200;
 }
 
 /* for the super long github links i drop */
@@ -117,7 +117,7 @@ h5 a,
 h6 a {
 	/* margin-left: 1rem; */
 	text-decoration: none !important;
-	@apply text-orange-700 dark:text-orange-400;
+	@apply text-sky-700 dark:text-sky-400;
 }
 article.prose h2::before {
 	content: '## ';

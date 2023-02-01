@@ -43,7 +43,7 @@
 		</li>
 		<li>
 			<a
-				class="hidden rounded-lg p-1 text-gray-800 transition-all hover:bg-yellow-200 dark:text-gray-200 dark:hover:bg-yellow-800 sm:px-3 sm:py-2 md:inline-block"
+				class="hidden rounded-lg p-1 text-gray-800 transition-all hover:bg-sky-200 dark:text-gray-200 dark:hover:bg-sky-800 sm:px-3 sm:py-2 md:inline-block"
 				rel="external"
 				href={'/rss.xml'}
 				><span class="capsize">RSS</span>
@@ -77,8 +77,8 @@
 		</a> -->
 		<!-- Github -->
 		<a
-			class="rounded-lg text-gray-700 hover:bg-yellow-200 dark:text-gray-200
-			dark:hover:bg-yellow-800"
+			class="rounded-lg text-gray-700 hover:bg-sky-200 dark:text-gray-200
+			dark:hover:bg-sky-800"
 			href={REPO_URL}
 			aria-label="GitHub source"
 		>
@@ -100,8 +100,8 @@
 		</a>
 		<button
 			aria-label="Toggle Dark Mode"
-			class="ml-1 flex h-9 w-9 items-center justify-center rounded-lg bg-yellow-400 ring-yellow-400
-			transition-all hover:ring-2 dark:bg-yellow-800"
+			class="ml-1 flex h-9 w-9 items-center justify-center rounded-lg bg-sky-400 ring-sky-400
+			transition-all hover:ring-2 dark:bg-sky-800"
 			on:click={toggleDarkMode}
 		>
 			{#if isDark}
@@ -110,7 +110,7 @@
 					viewBox="0 0 24 24"
 					fill="none"
 					stroke="currentColor"
-					class="h-5 w-5 text-gray-800 dark:text-yellow-100"
+					class="h-5 w-5 text-gray-800 dark:text-sky-100"
 				>
 					<path
 						stroke-linecap="round"
