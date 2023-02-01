@@ -1,6 +1,6 @@
 export const SITE_URL = 'https://luqven.netlify.app';
 export const APPROVED_POSTERS_GH_USERNAME = ['luqven'];
-export const GH_USER_REPO = 'luqven/swyxkit-blog'; // used for pulling github issues and offering comments
+export const GH_USER_REPO = 'luqven/blogv2'; // used for pulling github issues and offering comments
 export const SITE_TITLE = 'luqven';
 export const SITE_DESCRIPTION = "Luis Ball's personal site";
 export const DEFAULT_OG_IMAGE =

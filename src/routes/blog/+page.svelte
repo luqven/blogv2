@@ -41,9 +41,7 @@
 	// https://github.com/sw-yx/swyxkit/pull/171
 	// this will be slow if you have thousands of items, but most people don't
 	let isTruncated = items?.length > 20;
-	
-	
-	
+
 	// we are lazy loading a fuzzy search function
 	// with a fallback to a simple filter function
 	let loaded = false;
@@ -67,10 +65,10 @@
 			loaded = true;
 		});
 	}
-	if ($search) loadsearchFn()
+	if ($search) loadsearchFn();
 	/** @type import('$lib/types').ContentItem[]  */
 	let list;
-	$: searchFn(items, $selectedCategories, $search).then(_items => list = _items);
+	$: searchFn(items, $selectedCategories, $search).then((_items) => (list = _items));
 
 	// .slice(0, isTruncated ? 2 : items.length);
 </script>
@@ -84,12 +82,10 @@
 
 <section class="mx-auto mb-16 flex max-w-2xl flex-col items-start justify-center px-4 sm:px-8">
 	<h1 class="mb-4 text-3xl font-bold tracking-tight text-black dark:text-white md:text-5xl">
-		{SITE_TITLE} Blog
+		{SITE_TITLE}'s Blog
 	</h1>
 	<p class="mb-4 text-gray-600 dark:text-gray-400">
-		Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laborum sunt reprehenderit alias rerum
-		dolor impedit. In total, I've written {items.length} articles on my blog. Use the search below to
-		filter by title.
+		Written by Luis H. Ball Jr. | Software Engineer. Baseball fan. Tolkeinist.
 	</p>
 	<div class="relative mb-4 w-full">
 		<input
@@ -143,7 +139,8 @@
 
 	<!-- you can hardcode yourmost popular posts or pinned post here if you wish -->
 	{#if !$search && !$selectedCategories?.length}
-		<MostPopular />
+		<!-- TODO: comment this back in once we actually have content -->
+		<!-- <MostPopular /> -->
 		<h3 class="mt-8 mb-4 text-2xl font-bold tracking-tight text-black dark:text-white md:text-4xl">
 			All Posts
 		</h3>

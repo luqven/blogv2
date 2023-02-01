@@ -44,7 +44,7 @@
 				class="text-gray-500 transition hover:text-gray-300"
 				target="_blank"
 				rel="noopener noreferrer"
-				href={REPO_URL}
+				href="https://github.com/luqven"
 			>
 				GitHub
 			</a>
