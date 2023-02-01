@@ -48,7 +48,7 @@
 
 <svelte:head>
 	<title>{json.title}</title>
-	<meta name="description" content="swyxkit blog" />
+	<meta name="description" content="Luis Ball | blog" />
 	<!-- reference: https://gist.github.com/whitingx/3840905 -->
 
 	<link rel="canonical" href={canonical} />
@@ -82,7 +82,7 @@
 	<div
 		class="bg border-red mt-2 flex w-full justify-between sm:items-start md:flex-row md:items-center"
 	>
-		<p class="flex items-center text-sm text-gray-700 dark:text-gray-300">swyx</p>
+		<p class="flex items-center text-sm text-gray-700 dark:text-gray-300">luqven</p>
 		<p class="flex items-center text-sm text-gray-600 dark:text-gray-400">
 			<a
 				href={json.ghMetadata.issueUrl}
